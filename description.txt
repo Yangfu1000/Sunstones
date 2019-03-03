@@ -19,7 +19,7 @@ When you right-click an 'Awoken' Sunstone in your inventory, the prefix will be 
 This mod also features a purple reforge color when reforging Sunstones to stick out and make spotting those Legendary prefixes easier.
 
 
-You can help improve the mod or report issues at: 
+You can help improve the mod or report issues at: https://github.com/Yangfu1000/Sunstones
 
 
 Credits:
