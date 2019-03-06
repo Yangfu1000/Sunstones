@@ -1,6 +1,6 @@
 # Sunstones
 A Terraria Mod
-This mod is a mod for players who want to customize your reforges a little more.
+This mod is a mod for players who want to customize their reforges a little more.
 
 This mod adds:
 - 'Dormant' Sunstones
