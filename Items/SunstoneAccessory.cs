@@ -5,7 +5,7 @@ using Terraria.Utilities;
 
 namespace Sunstones.Items
 {
-	public class SunstoneAccessory: ModItem
+	public class SunstoneAccessory : ModItem
 	{
 		int[] best = {65, 66, 68, 72, 76, 80};
 		
