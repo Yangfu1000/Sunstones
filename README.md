@@ -25,5 +25,7 @@ You can help improve the mod or report issues at: https://github.com/Yangfu1000/
 
 
 Credits:
+
 ReLogic (for making the game we all know and love)
+
 Beetrootmonkey (for inspiration and giving permission to publish this branch mod)
