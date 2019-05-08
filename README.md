@@ -1,5 +1,5 @@
 # Sunstones
-A Terraria Mod
+A Terraria Mod.
 This mod is a mod for players who want to customize their reforges a little more.
 
 
