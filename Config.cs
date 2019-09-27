@@ -11,7 +11,7 @@ namespace Sunstones
 	public static class Config
 	{
 		static string filename = "Sunstones Config v1.json";
-		public static int SunstoneDropRate = 1000;
+		public static int SunstoneDropRate;
 		
 		static string ConfigPath = Path.Combine(Main.SavePath, "Mod Configs", filename);
 		
@@ -40,6 +40,7 @@ namespace Sunstones
 
 		static void CreateConfig()
 		{
+			SunstoneDropRate = 1000;
 			Configuration.Clear();
 			Configuration.Put("The Droprate is calculated with the odds of 1 in X where X is the specified value", 0);
 			Configuration.Put("If you put 0 then the item will never drop", 0);

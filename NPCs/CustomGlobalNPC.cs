@@ -18,7 +18,7 @@ namespace Sunstones.NPCs
 
 		public override void NPCLoot(NPC npc)
 		{
-			if (npc.lifeMax > 100 && npc.value > 0f && Main.rand.Next(Config.SunstoneDropRate) == 1)
+			if (npc.lifeMax > 100 && npc.value > 0f && Main.rand.Next(0, Config.SunstoneDropRate) == 0)
 			{
 				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("SunstoneBlank"));
 			}
