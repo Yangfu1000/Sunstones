@@ -20,7 +20,6 @@ namespace Sunstones.Items
 			item.damage = 5;
 			item.knockBack = 5;
 			
-			item.value = 10000;
 			item.rare = 2;
 			item.maxStack = 1;
 			item.SetNameOverride("Sunstone (Ranged)");
@@ -33,15 +32,15 @@ namespace Sunstones.Items
 			
 			if (roll <= 10)
 			{
-				pfix = (byte)rand.Next(16, 25);
+				pfix = (byte)rand.Next(16, 26);
 			}
 			else if (roll <= 26)
 			{
-				pfix = (byte)rand.Next(36, 51);
+				pfix = (byte)rand.Next(36, 52);
 			}
 			else if (roll <= 35)
 			{
-				pfix = (byte)rand.Next(53, 61);
+				pfix = (byte)rand.Next(53, 62);
 			}
 			else
 			{
@@ -50,6 +49,16 @@ namespace Sunstones.Items
 			}
 			
 			return pfix;
+		}
+		
+		public override bool OnPickup(Player player)
+		{
+			if (item.prefix == 82)
+			{
+				item.rare = 10;
+			}
+			
+			return true;
 		}
 
 		public override bool CanRightClick()
@@ -66,14 +75,9 @@ namespace Sunstones.Items
 				item.prefix = this.item.prefix;
 			}
 			else
-			{
-				int number = Item.NewItem((int)player.position.X, (int)player.position.Y, player.width, player.height, this.item.type, 1, false, this.item.prefix, false, false);
-				
-				if (Main.netMode == 1)
-				{
-					NetMessage.SendData(21, -1, -1, null, number, 1f, 0f, 0f, 0, 0, 0);
-				}
-			}
+            {
+				Item.NewItem((int)player.position.X, (int)player.position.Y, player.width, player.height, this.item.type, 1, false, this.item.prefix, false, false);
+            }
 		}
 	}
 }

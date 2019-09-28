@@ -40,7 +40,7 @@ namespace Sunstones
 
 		static void CreateConfig()
 		{
-			SunstoneDropRate = 1000;
+			SunstoneDropRate = 100;
 			Configuration.Clear();
 			Configuration.Put("The Droprate is calculated with the odds of 1 in X where X is the specified value", 0);
 			Configuration.Put("If you put 0 then the item will never drop", 0);
